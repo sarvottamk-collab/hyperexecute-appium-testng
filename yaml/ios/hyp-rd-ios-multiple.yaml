@@ -13,7 +13,7 @@ retryOnFailure: false
 maxRetries: 1
 
 pre:
-  - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+  - mvn dependency:resolve
 
 appium: true
 framework:
