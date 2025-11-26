@@ -22,7 +22,7 @@ public class AndroidApp {
     @Test
     @org.testng.annotations.Parameters(value = {"device", "version", "platform"})
     public void AndroidApp1(String device, String version, String platform) {
-        version = System.getProperty("platformVersion");
+        //version = System.getProperty("platformVersion");
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("build","Java TestNG Android");
